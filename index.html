@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio Ambiente</title>
+    <style>
+        body {
+            background-color: #ccffcc; /* Fondo verde claro */
+            font-family: 'Bell MT', serif;
+            font-size: 26pt;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .section {
+            margin: 20px;
+            padding: 10px;
+        }
+        .section img, video {
+            max-width: 100%;
+            height: auto;
+        }
+        .section button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 20pt;
+            background-color: #009900;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .section button:hover {
+            background-color: #006600;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Medio Ambiente</h1>
+
+    <!-- Imagen principal -->
+    <div class="section">
+        <img src="IMAGEN5.jpg" alt="Imagen principal sobre medio ambiente">
+    </div>
+
+    <!-- Botón para la Sección 1 -->
+    <button onclick="toggleSection('section1')">Contaminación Ambiental</button>
+    <div id="section1" class="section hidden">
+        <h2>1. Contaminación Ambiental</h2>
+        <p>La contaminación ambiental es un problema global que afecta la calidad del aire, agua y suelo.</p>
+        <p>La contaminación ambiental es la presencia de sustancias o elementos dañinos para los seres humanos y los ecosistemas (seres vivos). Existen diferentes tipos de contaminación, pero básicamente se pueden dividir en: contaminación del aire, contaminación de suelos (tierra) y contaminación del agua.</p>
+        <img src="IMAGEN2.jpg" alt="Imagen sobre contaminación ambiental">
+    </div>
+
+    <!-- Botón para la Sección 2 -->
+    <button onclick="toggleSection('section2')">Energías Renovables</button>
+    <div id="section2" class="section hidden">
+        <h2>2. Energías Renovables</h2>
+        <p>Las energías renovables, como la solar y eólica, son esenciales para reducir el impacto ambiental.</p>
+        <p>Las energías renovables son un tipo de energías derivadas de fuentes naturales que llegan a reponerse más rápido de lo que pueden consumirse. Un ejemplo de estas fuentes son, por ejemplo, la luz solar y el viento; estas fuentes se renuevan continuamente.</p>
+        <img src="IMAGEN3.png" alt="Imagen sobre energías renovables">
+    </div>
+
+    <!-- Botón para la Sección 3 -->
+    <button onclick="toggleSection('section3')">Reciclaje y Reutilización</button>
+    <div id="section3" class="section hidden">
+        <h2>3. Reciclaje y Reutilización</h2>
+        <p>El reciclaje ayuda a reducir la cantidad de desechos y a preservar los recursos naturales.</p>
+        <p>Reciclar implica descomponer un producto en materias primas y luego utilizar las materias primas para crear nuevos productos. Reutilizar es reutilizar un activo existente para un nuevo uso, y eso es exactamente lo que hacen nuestras soluciones.</p>
+        <img src="IMAGEN4.jpg" alt="Imagen sobre reciclaje">
+    </div>
+
+    <!-- Botón para la Sección 4 -->
+    <button onclick="toggleSection('section4')">Conservación de Ecosistemas</button>
+    <div id="section4" class="section hidden">
+        <h2>4. Conservación de Ecosistemas</h2>
+        <p>La conservación de los ecosistemas es clave para proteger la biodiversidad y mantener el equilibrio natural.</p>
+        <p>Conversión: el cambio de un ecosistema natural a otro uso del suelo, o un cambio profundo en la composición, estructura o función de las especies del ecosistema natural. Estas definiciones son aplicables en todo el mundo y se pueden contextualizar a diferentes regiones y sistemas de producción de materias primas.</p>
+        <img src="IMAGEN1.jpg" alt="Imagen sobre conservación de ecosistemas">
+    </div>
+
+    <!-- Video sobre el Medio Ambiente -->
+    <div class="section">
+        <h2>Video sobre el Medio Ambiente</h2> <iframe width="759" height="427" src="https://www.youtube.com/embed/8yo99_T4QZI" title="¿QUÉ ES EL MEDIO AMBIENTE? - Definición y resumen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Lady Borja Aldana 4B.</p>
+    </div>
+
+</body>
+</html>
